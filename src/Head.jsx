@@ -1,0 +1,96 @@
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+
+
+
+const Head = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  return (
+    <>
+      <nav className="navbar">
+        <div className="nav-container">
+          <NavLink exact to="/" className="nav-logo">
+            POLICE DEPARTMENT
+            <i className="fas fa-code"></i>
+          </NavLink>
+
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/admin"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Admin Dashboard
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/course management"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Course Management
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/control"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Control Room
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Contact Us
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/login "
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Login
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact "
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Setting
+              </NavLink>
+            </li>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+          </div>
+        </div>
+      </nav>
+    </>
+  )
+}
+export default Head;

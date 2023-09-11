@@ -1,0 +1,11 @@
+.containeraaaaa{
+width: 100%;
+display: flex;
+direction: row;
+justify-content: center;
+align-items:center ;
+background-color: rgb(58, 85, 108);
+height: 680px;
+}
+
+

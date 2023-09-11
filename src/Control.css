@@ -1,0 +1,18 @@
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .control-panel {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .control-panel button {
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+  
