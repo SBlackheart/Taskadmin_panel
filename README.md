@@ -4,7 +4,8 @@
 #login-page
 ![Screenshot (449)](https://github.com/SBlackheart/Taskadmin_panel/assets/133658460/84103751-110a-43f8-b90f-5d90ac38f8e4)
 
-
+#control-page
+![Screenshot (448)](https://github.com/SBlackheart/Taskadmin_panel/assets/133658460/c9c5b09b-03c7-43eb-b50a-8ea0bab021d4)
 
 # Getting Started with Create React App
 
